@@ -40,23 +40,23 @@ All activities are performed using free and publicly available tools within an a
 ## ⚙️ Installation & Setup
 
 ### Step 1 — Go to the official [Openwall John the Ripper](https://www.openwall.com/john/) pagea and Install John the Ripper.
-   <img width="1050" height="468" alt="image" src="https://github.com/user-attachments/assets/fb7327f7-2b1c-469b-96d5-93f21e2ccd90" />
+   <img width="1050" height="468" alt="image" src="Screenshots/web page.png" />
    
 ---
 ### Step 2 — Go to the official [Johnny wiki page](http://openwall.info/wiki/john/johnny) and Install the Johnny GUI.   
-<img width="1050" height="559" alt="image" src="https://github.com/user-attachments/assets/653669f1-9aa6-463b-83bb-044419cd31d9" />
+<img width="1050" height="559" alt="image" src="Screenshots/gui.png" />
 
 ---
 ### Step 3 — Link Johnny to John the Ripper
 1. Open Johnny. On first launch it will say no valid JTR executable was found — this is expected.
 2. Go to **Settings → Browse**.
-   <img width="1050" height="1075" alt="image" src="https://github.com/user-attachments/assets/2668f15d-8955-476f-aa0e-f5b83984dde9" />
+   <img width="1050" height="1075" alt="image" src="Screenshots/interface.png" />
 
 3. Navigate into the extracted JTR folder and select `john.exe` inside the `run` subfolder.
-   <img width="1050" height="720" alt="image" src="https://github.com/user-attachments/assets/2c934603-46b0-4856-b6d5-8f5e4f8fffd4" />
+   <img width="1050" height="720" alt="image" src="Screenshots/john file.png" />
    
 4. Johnny should now confirm it has detected John the Ripper (e.g. version `1.9.0-jumbo-1`). If it doesn't, double-check you pointed it at the `run` folder, not the top-level archive folder.
-   <img width="1049" height="553" alt="image" src="https://github.com/user-attachments/assets/52ddc8a4-8bc2-41ce-9469-381277897f40" />
+   <img width="1049" height="553" alt="image" src="Screenshots/john run.png" />
 
 
 ---
@@ -65,13 +65,13 @@ All activities are performed using free and publicly available tools within an a
 
 ### Step 4 — Extract the hash from the PDF
 1. Open [onlinehashcrack.com's PDF hash extractor](https://onlinehashcrack.com/tools-pdf-hash-extractor.php).
-   <img width="1882" height="861" alt="10" src="https://github.com/user-attachments/assets/7bb9a5e9-95c5-446e-bfeb-ccadedd50508" />
+   <img width="1882" height="861" alt="10" src="Screenshots/hashcractor.png" />
 
 2. Upload your locked PDF and click **Upload**.
-   <img width="1050" height="479" alt="image" src="https://github.com/user-attachments/assets/5a4e9870-0caa-449b-98e7-c4ed8dc376ae" />
+   <img width="1050" height="479" alt="image" src="Screenshots/upload pdf.png" />
 
 3. Copy the full output — it should start with `$pdf$`.
-   <img width="864" height="392" alt="image" src="https://github.com/user-attachments/assets/7c09953e-6422-45e7-9584-9d924c006cba" />
+   <img width="864" height="392" alt="image" src="Screenshots/output.png" />
 
 
 > ⚠️ **Privacy note:** uploading a file to a third-party site means it leaves your machine. Only do this with non-sensitive training files — never with confidential or production documents. For real sensitive files, use a local/offline pdf2john utility instead.
@@ -79,26 +79,26 @@ All activities are performed using free and publicly available tools within an a
 ---
 ### Step 5 — Save and load the hash
 1. Paste the copied hash into Notepad and save it as `hash1.txt`. Make sure it starts cleanly with `$pdf$` with no extra characters or line breaks.
-<img width="1048" height="566" alt="image" src="https://github.com/user-attachments/assets/b17d22b0-c8cd-4942-a966-55a0f1028013" />
+<img width="1048" height="566" alt="image" src="Screenshots/notepad.png" />
 
 
 2. In Johnny, go to **Open password file** and select `hash1.txt`.
-   <img width="1050" height="652" alt="image" src="https://github.com/user-attachments/assets/d433e206-f8c8-4eb1-8575-68ba14ef3d42" />
+   <img width="1050" height="652" alt="image" src="Screenshots/select file.png" />
 
 
 ---
 ### Step 6 — Start the attack
 1. Click **Start new attack**.
-<img width="1050" height="553" alt="image" src="https://github.com/user-attachments/assets/fd69d79d-b081-495d-a623-0c1ef39a0930" />
+<img width="1050" height="553" alt="image" src="Screenshots/start attack.png" />
 
 
 2. When it hits 100%, check the **Password** column — the recovered plaintext will be shown next to the hash.
-   <img width="1050" height="528" alt="image" src="https://github.com/user-attachments/assets/64ba0572-67b9-4f73-b9b4-624835555cc0" />
+   <img width="1050" height="528" alt="image" src="Screenshots/pass.png" />
 
 ---
 ### Step 7 — Unlock the original PDF
 1. Open the original locked PDF in Adobe Acrobat Reader (or your PDF viewer) and  Enter the recovered password when prompted.
-<img width="1044" height="489" alt="image" src="https://github.com/user-attachments/assets/893d6fd1-0580-4049-9bf2-6660993de0e9" />
+<img width="1044" height="489" alt="image" src="Screenshots/enter pass.png" />
 
 
 2. If the file opens, the attack chain is verified end to end.
@@ -172,4 +172,4 @@ This project is for educational and authorized security testing only. Perform pa
 ###  Mohan Sabale
 **Cybersecurity Intern B082**  
 
-LinkedIn: https://www.linkedin.com/in/solanki-vijay/
+LinkedIn: www.linkedin.com/in/mohan-sabale-a57752283
