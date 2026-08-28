@@ -102,7 +102,7 @@ All activities are performed using free and publicly available tools within an a
 
 
 2. If the file opens, the attack chain is verified end to end.
-   <img width="1050" height="559" alt="image" src="https://github.com/user-attachments/assets/3f7399a3-8b39-4f4e-9052-d7f559d07c34" />
+   <img width="1050" height="559" alt="image" src="Screenshots/end.png" />
 
 
 ---
